@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a herf="main.html">Главная</a></li>
+            <li><a herf="cloth.html">Одежда</a></li>
+            <li><a herf="jackets.html">Куртки</a></li>
+            <li><a herf="shoes.html">Обувь</a></li>
+        </ul>
+    </nav>
+    <div class="row">
+        <h1 class="col-12 text-monospace text-center">Обувь</h1>
+            {% for shoes in shoeses %}
+            <div class="col-12 col-md-6 col-lg-4">
+                <h2>{{ shoes.name }}</h2> <p>{{ shoes.sayz }}</p> <p>{{ shoes.brend }}</p>
+            </div> {% endfor %}
+    </div>
+</body>
+</html>
